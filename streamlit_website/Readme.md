@@ -1,18 +1,8 @@
 # DMQL Project
 
 ## Overview
-This repository contains the code for a web application and SQL database developed as a group project for the Data Management and Query Languages (DMQL) course (CSE 560). The project involves creating a website that interacts with a PostgreSQL database, performing various operations such as insertion, deletion, selection, and updating of data. Discovering the cost, changing the execution plan and optimizing various queries.
+The project involves creating a website that interacts with a PostgreSQL database, performing various operations such as insertion, deletion, selection, and updating of data. Discovering the cost, changing the execution plan and optimizing various queries.
 
-## Contributors
-- **Priya**
-  - Responsible for creating and optimizing queries by studying execution plans, cost, and applying appropriate indexing.
-
-- **Sanju**
-  - Reponsible for creating the report and data integration part of intial stages
-
-- **Sujay**
-  - [GitHub](https://github.com/jayshrivastava0)
-  - Created a fake dataset and website, integrated it into PostgreSQL, established a connection to the database, and assisted in optimization.
 
 ## Project Structure
 - **home_page.py**: Defines the content for the home page of the web application, including information about the contributors and their roles.
