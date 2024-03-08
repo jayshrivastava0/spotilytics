@@ -1,0 +1,77 @@
+# DMQL Project
+
+## Overview
+This repository contains the code for a web application and SQL database developed as a group project for the Data Management and Query Languages (DMQL) course (CSE 560). The project involves creating a website that interacts with a PostgreSQL database, performing various operations such as insertion, deletion, selection, and updating of data. Discovering the cost, changing the execution plan and optimizing various queries.
+
+## Contributors
+- **Priya**
+  - Responsible for creating and optimizing queries by studying execution plans, cost, and applying appropriate indexing.
+
+- **Sanju**
+  - Reponsible for creating the report and data integration part of intial stages
+
+- **Sujay**
+  - [GitHub](https://github.com/jayshrivastava0)
+  - Created a fake dataset and website, integrated it into PostgreSQL, established a connection to the database, and assisted in optimization.
+
+## Project Structure
+- **home_page.py**: Defines the content for the home page of the web application, including information about the contributors and their roles.
+
+- **insert_queries.py**: Contains functionality related to inserting new data into the PostgreSQL database.
+
+- **delete_query.py**: Implements the logic for deleting records from the database.
+
+- **update_queries.py**: Manages the update queries for modifying data in the database.
+
+- **select_queries.py**: Handles various SELECT queries to retrieve specific information from the database.
+
+## Dependencies
+- `PIL`: Python Imaging Library for working with images.
+- `streamlit`: Web framework for creating interactive web applications.
+- `sqlalchemy`: SQL toolkit and Object-Relational Mapping (ORM) library for Python.
+- `psycopg2-binary`: PostgreSQL adapter for Python.
+
+## Database Configuration
+1. Store your database credentials in a file named `secrets.txt` and save it. 
+   ```
+   dialect=postgresql
+   username=<your_username>
+   password=<your_password>
+   host=<your_host>
+   port=<your_port>
+   database=<your_database>
+   ```
+
+## Running the Application
+1. Install the required dependencies using:
+   ```
+   pip install -r requirements.txt
+   ```
+
+2. Execute the main script:
+   ```
+   streamlit run DQML_group.py
+   ```
+
+3. Access the application by navigating to the provided URL in your web browser.
+
+## Pages
+The web application consists of the following pages:
+
+- **Home**: Overview and introduction to the project and contributors.
+- **ER_diagram**: Displays the Entity-Relationship (ER) diagram of the database.
+- **Insert Query**: Allows users to insert new data into the database.
+- **Delete Query**: Enables the deletion of records from the database.
+- **Select Query**: Provides options for running SELECT queries to retrieve specific information.
+- **Update Query**: Facilitates the modification of data in the database.
+
+
+
+
+-- The readme for fake data geneartion script is the folder Fake_Data_generator
+
+
+Feel free to explore and interact with the various functionalities of the web application!
+
+---
+
