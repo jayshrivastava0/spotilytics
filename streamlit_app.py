@@ -1,56 +1,52 @@
 from PIL import Image
 import streamlit as st
+from home_page import *
+from insert_queries import *
+from delete_query import *
+from select_queries import *
+from update_queries import *
 import os
+
 
 base_path = os.getcwd()
 
-# Define page content functions
-def home():
-    # st.markdown('<style>body{background-color: Yellow;}</style>',unsafe_allow_html=True)
-    st.title("Welcome to the Home Page")
-    
-    ## Header section
-    st.title("Hi, This is our deployed website for group project of DMQL - CSE 560")
-    st.subheader("We are group of 3 aspiring Data Science Students")
-
-    ## priya's container
-    with st.container():
-        st.title("Priya")
-        left_col, right_col = st.columns(2)
-        with left_col:
-            st.header("I was incharge of creating and optimizing queries by studying execution plan, cost and \
-                      applying appropriate indexing as well. I can't wait to apply all this learnt knowledge \
-                       in real world.")
-            
-        with right_col:
-
-            image_path = os.path.join(base_path, "images/priya.jpg")
-            priya_image = Image.open(image_path)
-            st.image(priya_image, use_column_width=True)
+def ER_diagram():
+    st.title("ER Diagram of our database")
+    image = Image.open(os.path.join(base_path, "images/ER.png"))
+    st.image(image, use_column_width=True)
 
 
-    ## sanju's container
-    with st.container():
-        left_col, right_col = st.columns(2)
-        with right_col:
-            st.title("Sanju")
-            st.header("I was heavily invested in creating the report and data integration part of intial stages")
 
-        with left_col:
-            image_path = os.path.join(base_path, "images/sanjukta.jpg")
-            priya_image = Image.open(image_path)
-            st.image(priya_image, use_column_width=True)
 
-    # Jay's container
-    with st.container():
-        left_col, right_col = st.columns(2)
-        with left_col:
-            st.title("Sujay")
-            st.header("I created fake dataset and integrated it to postgres.\
-                      I was incharge of creating the self contained website and \
-                      establishing a connection to the postgres. I also helped Priya in optimization")
 
-        with right_col:
-            image_path = os.path.join(base_path, "images/jay.jpg")
-            priya_image = Image.open(image_path)
-            st.image(priya_image, use_column_width=True)
+st.set_page_config(page_title="DMQL Project",\
+                   page_icon = ":tada:",\
+                    layout="wide")
+
+# Define pages
+pages = {
+    "Home": home,
+    "ER_diagram": ER_diagram,
+    "Insert Query": page2,
+    "Delete Query" : delete_query_for_podcast,
+    "Select Query" : select_queries_select,
+    "Update Query" : update_query
+    # Add more pages as needed
+}
+
+st.sidebar.title("Navigation")
+selected_page = st.sidebar.radio("Select Page", ["Home", "ER_diagram", "Insert Query", "Delete Query", "Select Query", "Update Query"])
+
+# Display the selected page content
+if selected_page == "Home":
+    home()
+elif selected_page == "ER_diagram":
+    ER_diagram()
+elif selected_page == "Insert Query":
+    page2()
+elif selected_page == "Delete Query":
+    delete_query_for_podcast()
+elif selected_page == "Select Query":
+    select_queries_select()
+elif selected_page == "Update Query":
+    update_query()
