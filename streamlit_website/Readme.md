@@ -1,8 +1,7 @@
 # Spotilytics Stremalit Website
 
 ## Overview
-The project involves creating a website that interacts with a PostgreSQL database, performing various operations such as insertion, deletion, selection, and updating of data. Discovering the cost, changing the execution plan and optimizing various queries.
-
+Spotilytics is a comprehensive database management and analytics project designed to compute essential business Key Performance Indicators (KPIs). It monitors metrics such as customer churn analysis, monthly active users (MAU), Customer Lifetime Value (CLV), and Gross Revenue, providing valuable insights for strategic decision-making and performance evaluation within the Spotify platform. Performed other analyses like Geotargeting, Follower Count, and Regional Genre Analysis to gain deeper insights into user engagement, demographic trends, and cultural preferences across different markets, ultimately enhancing content curation, personalized recommendations, and platform optimization strategies.
 
 ## Project Structure
 - **home_page.py**: Defines the content for the home page of the web application, including information about the contributors and their roles.
