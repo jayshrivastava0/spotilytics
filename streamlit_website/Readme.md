@@ -1,4 +1,4 @@
-# DMQL Project
+# Spotilytics Stremalit Website
 
 ## Overview
 The project involves creating a website that interacts with a PostgreSQL database, performing various operations such as insertion, deletion, selection, and updating of data. Discovering the cost, changing the execution plan and optimizing various queries.
