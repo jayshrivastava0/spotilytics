@@ -19,7 +19,7 @@ def ER_diagram():
 
 
 
-st.set_page_config(page_title="DMQL Project",\
+st.set_page_config(page_title="Spotilytics",\
                    page_icon = ":tada:",\
                     layout="wide")
 
