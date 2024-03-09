@@ -10,8 +10,8 @@ def home():
     st.title("Welcome to the Home Page")
     
     ## Header section
-    st.title("Hi, This is our deployed website for group project of DMQL - CSE 560")
-    st.subheader("We are group of 3 aspiring Data Science Students")
+    st.title("Hi, This is our deployed website for Spotilytics")
+    st.subheader("Lorem Ipsum")
 
     ## priya's container
     with st.container():
@@ -29,28 +29,17 @@ def home():
             st.image(priya_image, use_column_width=True)
 
 
-    ## sanju's container
+    ## jay's container
     with st.container():
         left_col, right_col = st.columns(2)
         with right_col:
-            st.title("Sanju")
-            st.header("I was heavily invested in creating the report and data integration part of intial stages")
-
-        with left_col:
-            image_path = os.path.join(base_path, "images/sanjukta.jpg")
-            priya_image = Image.open(image_path)
-            st.image(priya_image, use_column_width=True)
-
-    # Jay's container
-    with st.container():
-        left_col, right_col = st.columns(2)
-        with left_col:
             st.title("Sujay")
             st.header("I created fake dataset and integrated it to postgres.\
                       I was incharge of creating the self contained website and \
                       establishing a connection to the postgres. I also helped Priya in optimization")
 
-        with right_col:
+        with left_col:
             image_path = os.path.join(base_path, "images/jay.jpg")
-            priya_image = Image.open(image_path)
-            st.image(priya_image, use_column_width=True)
+            jay_image = Image.open(image_path)
+            st.image(jay_image, use_column_width=True)
+
