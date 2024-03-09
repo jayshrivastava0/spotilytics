@@ -26,7 +26,7 @@ def select_queries_select():
         key, value = line.strip().split("=")
         secrets[key.strip()] = value.strip()
 
-    engine = create_engine(f"""{secrets["dialect"]}://{secrets["username"]}:{secrets["password"]}@{secrets["host"]}:{secrets["port"]}/{secrets["database"]}""")
+    engine = create_engine("postgresql://kecagi7371:PASSWORD@ep-solitary-poetry-a50h7kvl.us-east-2.aws.neon.tech/spotify_db?sslmode=require")
     Session = sessionmaker(bind=engine)
     # Allow users to input the ID of the row to delete
     
