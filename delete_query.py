@@ -24,7 +24,7 @@ def delete_query_for_podcast():
         key, value = line.strip().split("=")
         secrets[key.strip()] = value.strip()
 
-    engine = create_engine("postgresql://kecagi7371:PASSWORD@ep-solitary-poetry-a50h7kvl.us-east-2.aws.neon.tech/spotify_db?sslmode=require")
+    engine = create_engine("postgresql://kecagi7371:WBxwqNPX9r0V@ep-solitary-poetry-a50h7kvl-pooler.us-east-2.aws.neon.tech/spotify_db?sslmode=require")
     Session = sessionmaker(bind=engine)
     # Allow users to input the ID of the row to delete
     
