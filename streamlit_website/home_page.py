@@ -10,8 +10,8 @@ def home():
     st.title("Welcome to the Home Page")
     
     ## Header section
-    st.title("Hi, This is our deployed website for group project of DMQL - CSE 560")
-    st.subheader("We are group of 3 aspiring Data Science Students")
+    st.title("Hi, This is our deployed website for group project of Spotilytics")
+    st.subheader("We are group of aspiring Data Science Students")
 
     ## priya's container
     with st.container():
