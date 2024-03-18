@@ -26,7 +26,7 @@ st.set_page_config(page_title="Spotilytics",\
 # Define pages
 pages = {
     "Home": home,
-    "ER_diagram": ER_diagram,
+    "ER Diagram": ER_diagram,
     "Insert Query": page2,
     "Delete Query" : delete_query_for_podcast,
     "Select Query" : select_queries_select,
@@ -35,7 +35,7 @@ pages = {
 }
 
 st.sidebar.title("Navigation")
-selected_page = st.sidebar.radio("Select Page", ["Home", "ER_diagram", "Insert Query", "Delete Query", "Select Query", "Update Query"])
+selected_page = st.sidebar.radio("Select Page", ["Home", "ER Diagram", "Insert Query", "Delete Query", "Select Query", "Update Query"])
 showSidebarNavigation = True
 # Display the selected page content
 if selected_page == "Home":
