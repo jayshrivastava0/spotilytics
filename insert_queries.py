@@ -19,7 +19,7 @@ base_path = os.getcwd()
 
 def page2():
     st.markdown(
-        f"<h1 style='text-align: center; font-size: 70px; color: #FF0000'>Add the required fields to add record in Podcast Table</h1>",
+        f"<h1 style='text-align: center; font-size: 50px; color: #FF0000'>Fill the required fields to add record in Podcast Table</h1>",
         unsafe_allow_html=True
     )
     # st.title("What is Spotilytics, you ask?")
