@@ -7,6 +7,10 @@ base_path = os.getcwd()
 # Define page content functions
 def home():
     # st.markdown('<style>body{background-color: Yellow;}</style>',unsafe_allow_html=True)
+    st.markdown(
+    f"<h1 style='text-align: center;'>Welcome to Spotilytics</h1>",
+    unsafe_allow_html=True
+)
     st.title("Welcome to the Spotilytics")
     
     ## Header section
