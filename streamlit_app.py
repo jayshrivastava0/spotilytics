@@ -11,7 +11,7 @@ import os
 base_path = os.getcwd()
 
 def ER_diagram():
-    st.title("ER Diagram of our database")
+    st.title("ER Diagram of Spotilytics Database")
     image = Image.open(os.path.join(base_path, "images/ER.png"))
     st.image(image, use_column_width=True)
 
