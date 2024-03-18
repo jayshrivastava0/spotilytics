@@ -36,7 +36,8 @@ def select_queries_select():
     select_queries = ["Region Wise Revenue From Users On Spotify",\
                       "Total Revenue From All Users On Spotify", \
                     "Display Incoming, Outgoing And Current Customers Month-Wise", \
-                    "Fetch The Podcast Table"]
+                    "Fetch The Podcast Table", \
+                    "Fetch The User Table"]
     selected_query = st.selectbox("Choose some SELECT queries from the given options", options=select_queries)
     if st.button("Run Query"):
 
@@ -51,7 +52,21 @@ def select_queries_select():
                     # Display the result in a table
                     st.table(result)
                 except:
-                    st.error("Data can't be inserted")
+                    st.error("Data can't be shown")
+
+
+        if selected_query == "Fetch The User Table":
+            # Perform the query when the button is pressed
+            with Session() as session:
+                query = text(f"""select * from "user";""")
+                result = session.execute(query).fetchall()
+                try:
+                    st.success("Query executed successfully!")
+
+                    # Display the result in a table
+                    st.table(result)
+                except:
+                    st.error("Data can't be shown")
 
 
         if selected_query == "Region Wise Revenue From Users On Spotify":
@@ -68,7 +83,7 @@ def select_queries_select():
                     # Display the result in a table
                     st.table(result)
                 except:
-                    st.error("Data can't be inserted")
+                    st.error("Data can't be shown")
         
         elif selected_query == "Total Revenue From All Users On Spotify":
             # Perform the query when the button is pressed
@@ -80,7 +95,7 @@ def select_queries_select():
                     st.success("Query executed successfully!")
                     st.table(result)
                 except:
-                    st.error("Data can't be inserted")
+                    st.error("Data can't be shown")
 
         else:
             with Session() as session:
@@ -114,6 +129,6 @@ def select_queries_select():
                     st.success("Query executed successfully!")
                     st.table(result)
                 except:
-                    st.error("Data can't be inserted")
+                    st.error("Data can't be shown")
 
 

@@ -31,7 +31,7 @@ def delete_query_for_podcast():
     Session = sessionmaker(bind=engine)
     # Allow users to input the ID of the row to delete
     
-    podcast_id = int(st.number_input("Enter the podcast id to be deleted"))
+    podcast_id = int(st.number_input("Enter the Podcast ID to be Deleted"))
     if st.button("Run Query"):
         # Perform the query when the button is pressed
         with Session() as session:

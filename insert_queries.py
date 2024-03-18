@@ -36,8 +36,8 @@ def page2():
     Session = sessionmaker(bind=engine)
     # Allow users to input the ID of the row to delete
     
-    podcast_id = int(st.number_input("Enter the Podcast ID to enter in the DB"))
-    podcast_title = st.text_input("Enter the Podcast_title to be inserted:")
+    podcast_id = int(st.number_input("Enter the Podcast ID to Insert in the DB"))
+    podcast_title = st.text_input("Enter the Podcast Title to be Inserted:")
     episode_number = int(st.number_input("Enter the Episode Number of the Podcast:"))
     episode_date = st.date_input("Enter Episode Date of Podcast")
     host_name = st.text_input("Enter Host name for podcast")

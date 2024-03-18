@@ -30,9 +30,9 @@ def update_query():
     engine = create_engine("postgresql://kecagi7371:WBxwqNPX9r0V@ep-solitary-poetry-a50h7kvl-pooler.us-east-2.aws.neon.tech/spotify_db?sslmode=require")
     Session = sessionmaker(bind=engine)
     # Allow users to input the ID of the row to delete
-    user_id = int(st.number_input("Choose User ID to which the update should be applied"))
-    subscribed_or_not = st.selectbox("After updation, should User be subscribed or not", options= ['yes', 'no'])
-    if subscribed_or_not == 'yes':
+    user_id = int(st.number_input("Choose User ID to Which The Update Should Be Applied"))
+    subscribed_or_not = st.selectbox("After Updation, Should User Be Subscribed Or Not", options= ['Yes', 'No'])
+    if subscribed_or_not == 'Yes':
         subscription_id = int(st.number_input("What should be the Subscription ID"))
     else:
         subscription_id = 'NULL'
