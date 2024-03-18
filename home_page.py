@@ -18,7 +18,7 @@ def home():
         st.title("Priya")
         left_col, right_col = st.columns(2)
         with left_col:
-            st.header("I was incharge of creating and optimizing queries by studying execution plan, cost and \
+            st.subheader("I was incharge of creating and optimizing queries by studying execution plan, cost and \
                       applying appropriate indexing as well. I can't wait to apply all this learnt knowledge \
                        in real world.")
             
@@ -34,7 +34,7 @@ def home():
         left_col, right_col = st.columns(2)
         with right_col:
             st.title("Sujay")
-            st.header("I created fake dataset and integrated it to postgres.\
+            st.subheader("I created fake dataset and integrated it to postgres.\
                       I was incharge of creating the self contained website and \
                       establishing a connection to the postgres. I also helped Priya in optimization")
 
