@@ -37,7 +37,7 @@ def select_queries_select():
                       "Total Revenue From All Users On Spotify", \
                     "Display Incoming, Outgoing And Current Customers Month-Wise", \
                     "Fetch The Podcast Table", \
-                    "Fetch The User Table"]
+                    "Fetch The User Table, First 1000 records"]
     selected_query = st.selectbox("Choose some SELECT queries from the given options", options=select_queries)
     if st.button("Run Query"):
 
@@ -55,13 +55,13 @@ def select_queries_select():
                     st.error("Data can't be shown")
 
 
-        if selected_query == "Fetch The User Table":
+        if selected_query == "Fetch The User Table, First 1000 records":
             # Perform the query when the button is pressed
             with Session() as session:
-                query = text(f"""select * from "user";""")
+                query = text(f"""select * from "user" LIMIT 1000;""")
                 result = session.execute(query).fetchall()
                 try:
-                    st.success("Query executed successfully! It might take a little time to load the whole table")
+                    st.success("Query executed successfully!")
 
                     # Display the result in a table
                     st.table(result)
