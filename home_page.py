@@ -36,14 +36,9 @@ def home():
 
 
     # with st.container():
-    st.title("")
-    st.subheader("")
-    st.subheader("")
-    st.subheader("")
-    st.subheader("")
-    st.subheader("")
-    st.subheader("")
-    st.subheader("")
+    # Add space before the contributors section
+    for _ in range(6):
+        st.markdown("")
     st.markdown(
     f"<h1 style='text-align: center; font-size: 45px;'>Contributors of Spotilytics</h1>",    
     unsafe_allow_html=True)
