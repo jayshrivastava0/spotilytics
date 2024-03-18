@@ -16,7 +16,7 @@ def home():
     ## Header section
     # st.title("Hi, This is our Home Page for Spotilytics")
     st.markdown(
-        f'<h2 style="color: gray;">Spotilytics is a comprehensive database management and analytics project designed to compute \
+        f'<h3 style="color: "#808080";">Spotilytics is a comprehensive database management and analytics project designed to compute \
     essential business Key Performance Indicators (KPIs). It monitors metrics such as customer churn analysis, \
     monthly active users (MAU), Customer Lifetime Value (CLV), and Gross Revenue, providing valuable insights \
     for strategic decision-making and performance evaluation within the Spotify platform. Performed other analyses\
