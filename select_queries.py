@@ -18,6 +18,9 @@ base_path = os.getcwd()
 
 
 def select_queries_select():
+    st.markdown(
+    f"<h1 style='text-align: center; font-size: 50px; color: #FF0000'>Run some predetermined select Queries</h1>",
+    unsafe_allow_html=True)
     with open(os.path.join(base_path, "secrets.txt"), "r") as file:
         lines = file.readlines()
 

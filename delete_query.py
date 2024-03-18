@@ -16,6 +16,9 @@ import os
 
 base_path = os.getcwd()
 def delete_query_for_podcast():
+    st.markdown(
+    f"<h1 style='text-align: center; font-size: 50px; color: #FF0000'>Fill the required fields to delete record from Podcast Table</h1>",
+    unsafe_allow_html=True)
     with open(os.path.join(base_path, "secrets.txt"), "r") as file:
         lines = file.readlines()
 
