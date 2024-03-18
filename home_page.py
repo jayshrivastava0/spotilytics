@@ -7,10 +7,10 @@ base_path = os.getcwd()
 # Define page content functions
 def home():
     # st.markdown('<style>body{background-color: Yellow;}</style>',unsafe_allow_html=True)
-    st.title("Welcome to the Home Page")
+    st.title("Welcome to the Spotilytics")
     
     ## Header section
-    st.title("Hi, This is our deployed website for Spotilytics")
+    st.title("Hi, This is our Home Page for Spotilytics")
     st.subheader("Spotilytics is a comprehensive database management and analytics project designed to compute essential business Key Performance Indicators (KPIs). It monitors metrics such as customer churn analysis, monthly active users (MAU), Customer Lifetime Value (CLV), and Gross Revenue, providing valuable insights for strategic decision-making and performance evaluation within the Spotify platform. Performed other analyses like Geotargeting, Follower Count, and Regional Genre Analysis to gain deeper insights into user engagement, demographic trends, and cultural preferences across different markets, ultimately enhancing content curation, personalized recommendations, and platform optimization strategies.")
 
     ## priya's container
@@ -19,7 +19,7 @@ def home():
         left_col, right_col = st.columns(2)
         with left_col:
             st.subheader("I was incharge of creating and optimizing queries by studying execution plan, cost and \
-                      applying appropriate indexing as well. I can't wait to apply all this learnt knowledge \
+                      applying appropriate indexing as well. I also created the Tableau Public Visualizations. I can't wait to apply all this learnt knowledge \
                        in real world.")
             
         with right_col:
@@ -36,7 +36,8 @@ def home():
             st.title("Sujay")
             st.subheader("I created fake dataset and integrated it to postgres.\
                       I was incharge of creating the self contained website and \
-                      establishing a connection to the postgres. I also helped Priya in optimization")
+                      establishing a connection to the postgres. I also deployed this website.\
+                       Additionally, I also helped Priya in optimization the query")
 
         with left_col:
             image_path = os.path.join(base_path, "images/jay.jpg")
