@@ -1,4 +1,4 @@
-# [spotilytics](https://spotilyticss.streamlit.app/)
+# [Spotilytics Website](https://spotilyticss.streamlit.app/)
 
 ### Overview
 
