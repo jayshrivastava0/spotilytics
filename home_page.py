@@ -11,7 +11,7 @@ def home():
         f"<h1 style='text-align: center; font-size: 85px; color: #FF0000'>Welcome to Spotilytics</h1>",
         unsafe_allow_html=True
     )
-    st.title("Welcome to the Spotilytics")
+    st.title("What is Spotilytics, you ask?")
     
     ## Header section
     # st.title("Hi, This is our Home Page for Spotilytics")
