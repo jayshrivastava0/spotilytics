@@ -33,12 +33,28 @@ def select_queries_select():
     Session = sessionmaker(bind=engine)
     # Allow users to input the ID of the row to delete
     
-    select_queries = ["region wise revenue from users on spotify",\
-                      "total revenue from all users on spotify", \
-                    "display incoming, outgoing and current customers month-wise"]
+    select_queries = ["Region Wise Revenue From Users On Spotify",\
+                      "Total Revenue From All Users On Spotify", \
+                    "Display Incoming, Outgoing And Current Customers Month-Wise", \
+                    "Fetch The Podcast Table"]
     selected_query = st.selectbox("Choose some SELECT queries from the given options", options=select_queries)
     if st.button("Run Query"):
-        if selected_query == "region wise revenue from users on spotify":
+
+        if selected_query == "Fetch The Podcast Table":
+            # Perform the query when the button is pressed
+            with Session() as session:
+                query = text(f"""select * from "podcasts";""")
+                result = session.execute(query).fetchall()
+                try:
+                    st.success("Query executed successfully!")
+
+                    # Display the result in a table
+                    st.table(result)
+                except:
+                    st.error("Data can't be inserted")
+
+
+        if selected_query == "Region Wise Revenue From Users On Spotify":
             # Perform the query when the button is pressed
             with Session() as session:
                 query = text(f"""select COUNT("User_ID") as CNT, "user"."User_Region" from "user"
@@ -54,7 +70,7 @@ def select_queries_select():
                 except:
                     st.error("Data can't be inserted")
         
-        elif selected_query == "total revenue from all users on spotify":
+        elif selected_query == "Total Revenue From All Users On Spotify":
             # Perform the query when the button is pressed
             with Session() as session:
                 query = text(f"""select COUNT("User_ID") as total_revenue_generating_cutomers from "user"
