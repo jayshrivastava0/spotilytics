@@ -39,7 +39,7 @@ Spotilytics is a comprehensive database management and analytics project designe
 
 2. Execute the main script:
    ```
-   streamlit run DQML_group.py
+   streamlit run streamlit_app.py
    ```
 
 3. Access the application by navigating to the provided URL in your web browser.
