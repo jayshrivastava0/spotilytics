@@ -34,19 +34,18 @@ def home():
     #  personalized recommendations, and platform optimization strategies.", className="gray-text")
 
 
-    with st.container():
-        st.title("")
-        st.subheader("")
-        st.subheader("")
-        st.subheader("")
-        st.subheader("")
-        st.subheader("")
-        st.subheader("")
-        st.subheader("")
-        st.markdown(
-        f"<h1 style='text-align: center; font-size: 45px;'>Contributors of Spotilytics</h1>",    
-        unsafe_allow_html=True
-    )
+    # with st.container():
+    st.title("")
+    st.subheader("")
+    st.subheader("")
+    st.subheader("")
+    st.subheader("")
+    st.subheader("")
+    st.subheader("")
+    st.subheader("")
+    st.markdown(
+    f"<h1 style='text-align: center; font-size: 45px;'>Contributors of Spotilytics</h1>",    
+    unsafe_allow_html=True)
     ## priya's container
     with st.container():
         st.title("Priya")
