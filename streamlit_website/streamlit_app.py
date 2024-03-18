@@ -36,7 +36,7 @@ pages = {
 
 st.sidebar.title("Navigation")
 selected_page = st.sidebar.radio("Select Page", ["Home", "ER_diagram", "Insert Query", "Delete Query", "Select Query", "Update Query"])
-
+showSidebarNavigation = True
 # Display the selected page content
 if selected_page == "Home":
     home()
