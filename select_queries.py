@@ -92,7 +92,7 @@ def select_queries_select():
                                     where "user"."Subscription_ID" IS NOT NULL;""")
                 result = session.execute(query).fetchall()
                 try:
-                    st.success("Query executed successfully!")
+                    st.success("Query executed successfully! It might take little time to load the whole table")
                     st.table(result)
                 except:
                     st.error("Data can't be shown")
