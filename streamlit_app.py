@@ -40,7 +40,7 @@ showSidebarNavigation = True
 # Display the selected page content
 if selected_page == "Home":
     home()
-elif selected_page == "ER_diagram":
+elif selected_page == "ER diagram":
     ER_diagram()
 elif selected_page == "Insert Query":
     page2()
