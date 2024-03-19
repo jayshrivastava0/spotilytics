@@ -35,12 +35,12 @@ pages = {
 }
 
 st.sidebar.title("Navigation")
-selected_page = st.sidebar.radio("Select Page", ["Home", "ER_Diagram", "Insert Query", "Delete Query", "Select Query", "Update Query"])
+selected_page = st.sidebar.radio("Select Page", ["Home", "ER Diagram", "Insert Query", "Delete Query", "Select Query", "Update Query"])
 showSidebarNavigation = True
 # Display the selected page content
 if selected_page == "Home":
     home()
-elif selected_page == "ER_Diagram":
+elif selected_page == "ER Diagram":
     ER_Diagram()
 elif selected_page == "Insert Query":
     page2()
