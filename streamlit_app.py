@@ -10,7 +10,7 @@ import os
 
 base_path = os.getcwd()
 
-def ER_diagram():
+def ER_Diagram():
     st.title("ER Diagram of Spotilytics Database")
     image = Image.open(os.path.join(base_path, "images/ER.png"))
     st.image(image, use_column_width=True)
@@ -26,7 +26,7 @@ st.set_page_config(page_title="Spotilytics",\
 # Define pages
 pages = {
     "Home": home,
-    "ER_Diagram": ER_diagram,
+    "ER_Diagram": ER_Diagram,
     "Insert Query": page2,
     "Delete Query" : delete_query_for_podcast,
     "Select Query" : select_queries_select,
@@ -40,8 +40,8 @@ showSidebarNavigation = True
 # Display the selected page content
 if selected_page == "Home":
     home()
-elif selected_page == "ER_diagram":
-    ER_diagram()
+elif selected_page == "ER_Diagram":
+    ER_Diagram()
 elif selected_page == "Insert Query":
     page2()
 elif selected_page == "Delete Query":
