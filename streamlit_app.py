@@ -24,7 +24,7 @@ def embed_tableau_dashboard():
     st.markdown("Here's the embedded Tableau Public Dashboard:")
     
     # Replace the URL below with the URL of your Tableau Public dashboard
-    tableau_url = "https://public.tableau.com/app/profile/priyadarshini.raghavendra/viz/Spotilytics/Revenue"
+    tableau_url = "https://public.tableau.com/views/Spotilytics/Revenue?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link"
     
     # Use an iframe to embed the Tableau dashboard
     st.components.v1.html(f'<iframe src="{tableau_url}" width="1000" height="600" frameborder="0"></iframe>', height=700)
