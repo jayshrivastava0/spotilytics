@@ -17,6 +17,20 @@ def ER_Diagram():
 
 
 
+import streamlit as st
+
+def embed_tableau_dashboard():
+    st.title("Tableau Public Dashboard")
+    st.markdown("Here's the embedded Tableau Public Dashboard:")
+    
+    # Replace the URL below with the URL of your Tableau Public dashboard
+    tableau_url = "https://public.tableau.com/app/profile/priyadarshini.raghavendra/viz/Spotilytics/Revenue"
+    
+    # Use an iframe to embed the Tableau dashboard
+    st.components.v1.html(f'<iframe src="{tableau_url}" width="1000" height="600" frameborder="0"></iframe>', height=700)
+
+
+    
 
 
 st.set_page_config(page_title="Spotilytics",\
@@ -31,11 +45,11 @@ pages = {
     "Delete Query" : delete_query_for_podcast,
     "Select Query" : select_queries_select,
     "Update Query" : update_query
-    # Add more pages as needed
+    "Dashboard": embed_tableau_dashboard# Add more pages as needed
 }
 
 st.sidebar.title("Navigation")
-selected_page = st.sidebar.radio("Select Page", ["Home", "ER Diagram", "Insert Query", "Delete Query", "Select Query", "Update Query"])
+selected_page = st.sidebar.radio("Select Page", ["Home", "ER Diagram", "Insert Query", "Delete Query", "Select Query", "Update Query", "Dashboard"])
 showSidebarNavigation = True
 # Display the selected page content
 if selected_page == "Home":
@@ -50,3 +64,5 @@ elif selected_page == "Select Query":
     select_queries_select()
 elif selected_page == "Update Query":
     update_query()
+elif selected_page == "Dashboard":
+    embed_tableau_dashboard()
