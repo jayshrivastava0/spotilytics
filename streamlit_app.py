@@ -44,7 +44,7 @@ pages = {
     "Insert Query": page2,
     "Delete Query" : delete_query_for_podcast,
     "Select Query" : select_queries_select,
-    "Update Query" : update_query
+    "Update Query" : update_query,
     "Dashboard": embed_tableau_dashboard# Add more pages as needed
 }
 
