@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 def users_tableau_dashboard():
-    st.title("[Tableau Users' Insights Dashboard](https://public.tableau.com/views/Spotilytics-Users/Users?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)")
+    st.title("[Spotilytics Users' Insights Dashboard](https://public.tableau.com/views/Spotilytics-Users/Users?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)")
     html_code = """
     <div class='tableauPlaceholder' id='viz1712365791020' style='position: relative'>
         <noscript>
