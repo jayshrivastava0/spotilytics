@@ -37,7 +37,7 @@ st.set_page_config(page_title="Spotilytics",\
 st.sidebar.title("Navigation")
 selected_page = st.sidebar.radio("Select Page", ["Home", "ER Diagram", \
                                                  "Insert Query", "Delete Query",\
-                                                 "Select Query", "Update Query",\ 
+                                                 "Select Query", "Update Query", \
                                                  "Revenue Dashboard", "Users Dashboard"])
 showSidebarNavigation = True
 # Display the selected page content
