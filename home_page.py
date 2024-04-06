@@ -47,9 +47,11 @@ def home():
         st.title("Priya")
         left_col, right_col = st.columns(2)
         with left_col:
-            st.subheader("I was incharge of creating and optimizing queries by studying execution plan, cost and \
-                      applying appropriate indexing as well. I also created the Tableau Public Visualizations. I can't wait to apply all this learnt knowledge \
-                       in real world.")
+            st.subheader("I was incharge of creating and optimizing queries by \
+                         studying execution plan, cost and \
+                         applying appropriate indexing as well. I further hosted the database online \
+                         and deployed this website. I also created the Revenue Tableau Dashboard \
+                         Tableau Public Visualizations.")
             
         with right_col:
 
@@ -64,9 +66,10 @@ def home():
         with right_col:
             st.title("Sujay")
             st.subheader("I created fake dataset and integrated it to postgres.\
-                      I was incharge of creating the self contained website and \
-                      establishing a connection to the postgres. I also deployed this website.\
-                       Additionally, I also helped Priya in optimization the query")
+                         I was incharge of creating the self contained local website and \
+                         establishing a connection to the postgres. I also deployed this website.\
+                         I also made Users Insights' Tableau Dashboard. \
+                         Additionally, I also helped Priya in optimization of the queries.")
 
         with left_col:
             image_path = os.path.join(base_path, "images/jay.jpg")

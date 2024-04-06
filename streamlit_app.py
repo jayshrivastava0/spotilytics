@@ -23,16 +23,6 @@ st.set_page_config(page_title="Spotilytics",\
                    page_icon = ":tada:",\
                     layout="wide")
 
-# Define pages
-# pages = {
-#     "Home": home,
-#     "ER_Diagram": ER_Diagram,
-#     "Insert Query": page2,
-#     "Delete Query" : delete_query_for_podcast,
-#     "Select Query" : select_queries_select,
-#     "Update Query" : update_query,
-#     "Dashboard": embed_tableau_dashboard# Add more pages as needed
-# }
 
 st.sidebar.title("Navigation")
 selected_page = st.sidebar.radio("Select Page", ["Home", "ER Diagram", \
