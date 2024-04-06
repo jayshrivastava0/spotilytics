@@ -6,7 +6,7 @@ from delete_query import *
 from select_queries import *
 from update_queries import *
 from revenue_dashboard import *
-from users_dashbaord import *
+from users_dashboard import *
 import os
 
 
