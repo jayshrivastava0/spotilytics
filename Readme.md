@@ -62,8 +62,8 @@ The web application consists of the following pages:
 
 -------------------------------------------------------------------------------------
 
-#### The readme for fake data geneartion script is the folder Fake_Data_generator
-# Entity Sets Table README
+# Fake_Data_generator
+
 
 ## Overview
 
